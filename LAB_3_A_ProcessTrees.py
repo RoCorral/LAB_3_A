@@ -7,8 +7,8 @@ Assignment:Lab 3-A - AVL,RBT, word Embeddings
 Last Modification: 11/4/2018
 Program Purpose: The purpose of this program is to practice and note the
 difference in computation times of insertion and retrieval between AVL
-Trees and Red Black Trees. We are provided with a word embeding file and 
-are required to insert each word and its embeding vector into a tree. 
+Trees and Red Black Trees. We are provided with a word embedding file and 
+are required to insert each word and its embedding vector into a tree. 
 After the insertions we must retrieved words based on pairs read from another
 file and compute the similarity. This is followed by computations of tree size
 and file output with word lists generated from the tree.
@@ -32,7 +32,7 @@ def read_f_into_AVL(file):
 	return CurAVL
 
 def read_f_into_RBT(file):
-	"""Recieves glove file with embedings location as a string 
+	"""Recieves glove file with embeddings location as a string 
 	constructs a Red Black tree using nodes with the word as one parameter 
 	and the 50 floting point vectors in an array as another.
 	"""
@@ -72,7 +72,7 @@ def user_selection_IF():
 	the origin of calls to the definitions requested by the lab the user is
 	to input values for tree type and depth to print.
 	"""
-	file = "glove.6B.50d.txt"       #file with embedings
+	file = "glove.6B.50d.txt"       #file with embeddings
 	file2 ="Apendix-word-List.txt"  #file with words to compare
 	menu = True                    
 	while menu:
