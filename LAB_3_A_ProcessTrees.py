@@ -28,6 +28,7 @@ def read_f_into_AVL(file):
 		a = line.split()
 		#Direguards "words" in file that do not begin witch characters from the alphabet
 		if (a[0] >= 'A' and a[0] <= 'Z') or (a[0] >='a' and a[0] <= 'z'):
+					## did you think about using a is char() for the line above
 			CurAVL.insert(AVL.Node( a[0] , a[1:(len(a))]))
 	return CurAVL
 
@@ -171,7 +172,7 @@ def user_selection_IF():
 			print("------>",selection)
 			print("is not even a Number....")
 
-
+	
 
 def get_numb_nodes(t):
 	"""geven a tree root computes the number of nodes in a tree recursivly"""
